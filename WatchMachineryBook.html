@@ -42,6 +42,13 @@
       figure > div.figure9 > img {
           margin: 1ex;
       }
+      figure > div.figure27 {
+          display: grid;
+          grid-template-columns: 45% 45%;
+      }
+      figure > div.figure27 > img {
+          width: 98%;
+      }
     </style>
   </head>
   <body>
@@ -1909,16 +1916,32 @@ the fly cutter moves away and a cutting-off tool moves forward and
 severs the completed
 
 
-<CAPTION>
-four separate images in 2x2 grid with captions 
-  First Cut.
-  Turning.
-  Cutting Off and Pointing.
-
-  Teeth.
-  Fig. 27.
-</CAPTION>
-
+<figure>
+  <!-- The images got extracted in a weird order: -->
+  <div class="figure27">
+    <figure>
+      <img src="figures/page79_figure27a.png"
+           alt="First cut."/>
+      <figcaption>First Cut.</figcaption>
+    </figure>
+    <figure>
+      <img src="figures/page79_figure27b.png"
+           alt="Cutting Off and Pointing."/>
+      <figcaption>Cutting Off and Pointing.</figcaption>
+    </figure>
+    <figure>
+      <img src="figures/page79_figure27d.png"
+           alt="Turning"/>
+      <figcaption>Turning</figcaption>
+    </figure>
+    <figure>
+      <img src="figures/page79_figure27c.png"
+           alt="Teeth."/>
+      <figcaption>Teeth'</figcaption>
+    </figure>
+  </div>
+  <figcaption>Fig. 27.</figcaption>
+</figure>
 
 pinion. The accompanving diagrams will serve to indi- cate some of the
 successive operations (Fig. 27).
