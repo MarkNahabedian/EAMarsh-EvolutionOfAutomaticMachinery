@@ -8,8 +8,8 @@
       }
       PAGE {
           display: block;
-          padding: 1ex;
           margin-bottom: 1ex;
+          border: solid thick yellow;
       }
       CAPTION {
           display: block;
@@ -22,14 +22,34 @@
           margin-top: 2ex;
           margin-bottom: 2ex;
       }
+
       PAGE-HEADING {
-          display: block;
-          text-align: center;
-          margin-top: 2ex;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 100%;
           margin-bottom: 2ex;
       }
-      PAGE-NUMBER {
+      PAGE-HEADING>HEADING {
+          text-align: center;
+          flex-grow: 1;
+          margin: 0;
+      }
+      PAGE-NUMBER[align="left"] {
+          display: inline;
+          position: absolute;
+          left: 10px;
+      }
+      PAGE-NUMBER[align="right"] {
+          display: inline;
+          position: absolute;
+          right: 10px;
+      }
+      PAGE-NUMBER[align="center"] {
           display: block;
+          text-align: center;
+      PAGE-NUMBER {
           margin-top: 1ex;
           margin-bottom: 1ex;
       }
@@ -290,8 +310,10 @@ brains in devising an easier, or
 
 <PAGE/>
 <a name="page-8"/>
-<PAGE-NUMBER align="left">8</PAGE-NUMBER>
-<PAGE-HEADING>INTRODUCTION.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">8</PAGE-NUMBER>
+  <HEADING>INTRODUCTION.</HEADING>
+</PAGE-HEADING>
 
 quicker, or cheaper, or better method of performing his work. On the
 contrary, it will in many or in most cases prove quite the contrary
@@ -320,8 +342,10 @@ machine? Within certain limits the machine is the
 
 <PAGE/>
 <a name="page-9"/>
-<PAGE-HEADING>INTRODUCTION.</PAGE-HEADING>
-<PAGE-NUMBER align="right">9</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>INTRODUCTION.</HEADING>
+  <PAGE-NUMBER align="right">9</PAGE-NUMBER>
+</PAGE-HEADING>
 
 better, for the reasons already stated. Still, the powers or
 capabilities of the machine are limited to a very narrow compass,
@@ -350,8 +374,10 @@ made with dimensions exactly uniform.
 
 <PAGE/>
 <a name="page-10"/>
-<PAGE-NUMBER align="left">10</PAGE-NUMBER>
-<PAGE-HEADING>INTRODUCTION.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">10</PAGE-NUMBER>
+  <HEADING>INTRODUCTION.</HEADING>
+</PAGE-HEADING>
 
 there will result a great reduction in cost of manufacture because of
 the avoidance of any individual or special fitting of the various
@@ -380,8 +406,10 @@ feeling that such a scheme was
 
 <PAGE/>
 <a name="page-11"/>
-<PAGE-HEADING>INTRODUCTION.</PAGE-HEADING>
-<PAGE-NUMBER align="right">11</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>INTRODUCTION.</HEADING>
+  <PAGE-NUMBER align="right">11</PAGE-NUMBER>
+</PAGE-HEADING>
 
 feasible and might be made to yield a good manufacturing profit, he
 endeavored to establish a watch factory, to be conducted on that
@@ -406,8 +434,10 @@ automatic watch machinery to any general extent, and in this branch of
 
 <PAGE/>
 <a name="page-12"/>
-<PAGE-NUMBER align="left">12</PAGE-NUMBER>
-<PAGE-HEADING>INTRODUCTION.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">12</PAGE-NUMBER>
+  <HEADING>INTRODUCTION.</HEADING>
+</PAGE-HEADING>
 
 business, as well as in almost all others, the larger concerns possess
 this great advantage over their smaller competitors.
@@ -462,7 +492,7 @@ chuck," so called from the method of its
 
 operation, it being caused to grasp the enclosed object by being drawn
 into the tapering mouth of the lathe spindle. It is also known as the
-''split chuck," from the form of its construction. Probably the oldest
+"split chuck," from the form of its construction. Probably the oldest
 form of such chuck is found in the "Aiken's awl," (Fig. 1) which is
 still in use in the hollow awl handle, filled with an assortment of
 awls and other simple tools. This awl handle is constructed with a
@@ -486,8 +516,11 @@ though it is believed that it was so retained for a time, but was
 
 <PAGE/>
 <a name="page-15"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">15</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">15</PAGE-NUMBER>
+</PAGE-HEADING>
+
 
 succeeded by a solid rod or screw which extended through the axis of
 the lathe spindle and was operated by some sort of wrench applied to
@@ -515,8 +548,10 @@ drawn into the taper mouth of
 
 <PAGE/>
 <a name="page-16"/>
-<PAGE-NUMBER align="left">16</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">16</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 the spindle to the extent which the smaller pieces would allow,
 consequently the larger pieces would be turned thinner than the
@@ -544,8 +579,10 @@ made to close the chuck without the use of the "hand-wheel,"
 
 <PAGE/>
 <a name="page-17"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">17</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">17</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-2">
   <img src="figures/page17_figure2.png"
@@ -557,8 +594,10 @@ made to close the chuck without the use of the "hand-wheel,"
 
 <PAGE/>
 <a name="page-18"/>
-<PAGE-NUMBER align="left">18</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">18</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 the closing being performed by the action of a stiff spiral spring,
 mounted on the draw-in spindle, while the opening was done by means of
@@ -579,9 +618,10 @@ lathes for very light
 
 <PAGE/>
 <a name="page-19"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">19</PAGE-NUMBER>
-
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">19</PAGE-NUMBER>
+</PAGE-HEADING>
 
 work). yet it was an advance toward a better form of self-closing
 lathe (Fig. 4). which has, by successive steps, reached a form of
@@ -610,8 +650,10 @@ common form of slide rest with the two slides, each
 
 <PAGE/>
 <a name="page-20"/>
-<PAGE-NUMBER align="left">20</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">20</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 movable by screws turned by the two hands of the operator. Later the
 hand wheel was succeeded by the self-closing form of lathe, the
@@ -639,8 +681,10 @@ that it was not only possible
 
 <PAGE/>
 <a name="page-21"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="left">21</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">21</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-5">
   <img src="figures/page21_figure5.png"
@@ -654,8 +698,10 @@ that it was not only possible
 
 <PAGE/>
 <a name="page-22"/>
-<PAGE-NUMBER align="left">22</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">22</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 of execution, but was by no means difficult, and seating himself at
 the instrument, he began the composition, and when he reached the
@@ -687,8 +733,10 @@ illustration (Fig. 6), which shows the train side
 
 <PAGE/>
 <a name="page-23"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">23</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">23</PAGE-NUMBER>
+</PAGE-HEADING>
 
 of a 16-size plate, with recesses turned for the barrel, the escape
 wheel, the pallets, the balance, and the bearing for the intermediate
@@ -719,8 +767,10 @@ boss is desired at the center of
 
 <PAGE/>
 <a name="page-24"/>
-<PAGE-NUMBER align="left">24</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">24</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 the recess, the tool is withdrawn at the proper time and distance, and
 when the recess is complete the turning tool is automatically drawn
@@ -748,8 +798,10 @@ in a similar manner. The boldness in the conception of this
 
 <PAGE/>
 <a name="page-25"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">25</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">25</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-7">
   <img src="figures/page25_figure7.png"
@@ -761,8 +813,10 @@ in a similar manner. The boldness in the conception of this
 
 <PAGE/>
 <a name="page-26"/>
-<PAGE-NUMBER align="left">26</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">26</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 machine (Fig. 7) will be appreciated when it is realized that the
 watch plate must be placed in each succeeding chuck in a different
@@ -790,8 +844,10 @@ plate so that it would be placed in the succeeding chuck with
 
 <PAGE/>
 <a name="page-27"/>
-<PAGE-HEADING>EVOLUTION* OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">27</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">27</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-8">
   <img src="figures/page27_figure8.png"
@@ -803,8 +859,10 @@ plate so that it would be placed in the succeeding chuck with
 
 <PAGE/>
 <a name="page-28"/>
-<PAGE-NUMBER align="left">28</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">28</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 the opposite face presented to the cutting tool. In some cases that
 change would be desired, but where it is desired to make the
@@ -860,8 +918,10 @@ and arbors was performed in this
 
 <PAGE/>
 <a name="page-30"/>
-<PAGE-NUMBER align="left">30</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">30</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 way. But this method was succeeded by a form of semi-automatic turning
 lathe, the exact form of which the writer is unable to
@@ -884,8 +944,10 @@ spindles).  It will be observed that at the left hand end of the
 
 <PAGE/>
 <a name="page-31"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">31</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">31</PAGE-NUMBER>
+</PAGE-HEADING>
 
 machine there is a combination of levers, designed to provide for
 turnings of various lengths without necessitating a change of feed
@@ -912,8 +974,10 @@ at the back of the machine, is driven by a worm and worm-gear, not
 
 <PAGE/>
 <a name="page-32"/>
-<PAGE-NUMBER align="left">32</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">32</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 shown. At the extreme left hand end of this shaft is shown the feed
 cam, the acting face of which gives motion to a rack lever, which
@@ -939,8 +1003,10 @@ of work. Devices
 
 <PAGE/>
 <a name="page-33"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">33</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">33</PAGE-NUMBER>
+</PAGE-HEADING>
 
 for so governing the action of the tool as to turn tapering staffs are
 also provided, but cannot be seen in a general view. In staff turning
@@ -970,8 +1036,10 @@ lathe
 
 <PAGE/>
 <a name="page-34"/>
-<PAGE-NUMBER align="left">34</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">34</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 in use in American watch factories, and probably to some exent may
 have found its way into some European factory also.
@@ -998,8 +1066,10 @@ such turning, it provided for facing either, hollow,
 
 <PAGE/>
 <a name="page-35"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">35</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">35</PAGE-NUMBER>
+</PAGE-HEADING>
 
 crowning, or at a right angle to the axis. It was also arranged to
 turn special pieces in which a part of the turning was to be straight
@@ -1031,8 +1101,10 @@ ordinary wire cutter or by a
 
 <PAGE/>
 <a name="page-36"/>
-<PAGE-NUMBER align="left">36</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">36</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 special chopping machine. These short pieces were then placed one by
 one in a spring chuck in a lathe, and one end carefully pointed. After
@@ -1060,8 +1132,10 @@ be ten or twelve, and in order to avoid injurious springing
 
 <PAGE/>
 <a name="page-37"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">37</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">37</PAGE-NUMBER>
+</PAGE-HEADING>
 
 of the staffs it was needful to alternate the turnings, so that the
 reduction in size should be gradual and uniform on both ends.
@@ -1096,8 +1170,10 @@ its work of cutting off the steel rod; the severed piece to be
 
 <PAGE/>
 <a name="page-40"/>
-<PAGE-NUMBER align="left">4O</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">4O</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 of proper length to form a desired pinion or arbor. But just before
 the completion of the severing operation, a tubular carrier was moved
@@ -1122,8 +1198,10 @@ its work of forming the second end of the blank, and when its
 
 <PAGE/>
 <a name="page-41"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">41</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">41</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-13">
   <img src="figures/page41_figure13.png"
@@ -1135,8 +1213,10 @@ its work of forming the second end of the blank, and when its
 
 <PAGE/>
 <a name="page-42"/>
-<PAGE-NUMBER align="left">42</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">42</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 work was completed the spindle was stopped, the chuck opened and the
 completed blank ejected and fell into a chute, which deposited it in a
@@ -1163,8 +1243,10 @@ mechanism is driven by a single belt.
 
 <PAGE/>
 <a name="page-43"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">43</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">43</PAGE-NUMBER>
+</PAGE-HEADING>
 
 A detailed description of any of these complicated machines would be
 somewhat difficult, and would be uninteresting to the general reader,
@@ -1189,8 +1271,10 @@ separate "dog" is rendered unnecessary. A very
 
 <PAGE/>
 <a name="page-44"/>
-<PAGE-NUMBER align="left">44</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">44</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 important gain is also obtained by this method of driving, viz.: the
 ability to remove a much larger amount of metal at a single turning
@@ -1219,8 +1303,10 @@ center in the
 
 <PAGE/>
 <a name="page-45"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">45</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">45</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-14">
   <img src="figures/page45_figure14.png"
@@ -1232,8 +1318,10 @@ center in the
 
 <PAGE/>
 <a name="page-46"/>
-<PAGE-NUMBER align="left">46</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">46</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 tailstock spindle, the chuck is then closed, the tailstock spindle is
 clamped firmly in place, the spindle is revolved, and the cutting tool
@@ -1259,8 +1347,10 @@ blank is reversed as to its
 
 <PAGE/>
 <a name="page-47"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">47</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">47</PAGE-NUMBER>
+</PAGE-HEADING>
 
 relation to the head and tail stocks and the cutting tools, the second
 carrier placing the blank in the third machine so that its opposite
@@ -1289,8 +1379,10 @@ this improvement. In the first form of such adapted lathes.
 
 <PAGE/>
 <a name="page-48"/>
-<PAGE-NUMBER align="left">48</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">48</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 the blanks were placed in a suitable hopper, from which they were
 taken, one at a time, automatically. This form of machine is in quite
@@ -1320,8 +1412,10 @@ way of turning has heretofore been done which could at all compare
 
 <PAGE/>
 <a name="page-49"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">49</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">49</PAGE-NUMBER>
+</PAGE-HEADING>
 
 with the work of these machines in delicacy, complexityand accuracy. (Fig. 15.)
 
@@ -1410,8 +1504,10 @@ work is
 
 <PAGE/>
 <a name="page-54"/>
-<PAGE-NUMBER align="left">54</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OK AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">54</PAGE-NUMBER>
+  <HEADING>EVOLUTION OK AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 unknown to the writer, but he recalls the fact that one of the first
 jobs of work which he did at the Waltham factory was to make drawings
@@ -1438,8 +1534,10 @@ the leaves, so that it is a matter of
 
 <PAGE/>
 <a name="page-55"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">55</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">55</PAGE-NUMBER>
+</PAGE-HEADING>
 
 surprise that a safe degree of accuracy could have been attained, but
 we believe there was seldom any serious trouble from that
@@ -1465,8 +1563,10 @@ distinct
 
 <PAGE/>
 <a name="page-56"/>
-<PAGE-NUMBER align="left">56</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">56</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 departments, the "Full Plate Department," under the general charge of
 Mr. A. T. Bacon, with Mr. A. Webster, at the head of the mechanical
@@ -1491,8 +1591,10 @@ remodelled within a few years so as to make
 
 <PAGE/>
 <a name="page-57"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY</PAGE-HEADING>
-<PAGE-NUMBER align="right">57</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY</HEADING>
+  <PAGE-NUMBER align="right">57</PAGE-NUMBER>
+</PAGE-HEADING>
 
 them entirely automatic in action. We will therefore defer further
 mention of them at this point, but will speak of them
@@ -1514,8 +1616,10 @@ bring
 
 <PAGE/>
 <a name="page-58"/>
-<PAGE-NUMBER align="left">58</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">58</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 the several cutters successively into operative position. Such
 machines were made, and subsequent alterations and improvements
@@ -1547,8 +1651,10 @@ is this true
 
 <PAGE/>
 <a name="page-59"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">59</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">59</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-19">
   <img src="figures/page59_figure19.png"
@@ -1560,8 +1666,10 @@ is this true
 
 <PAGE/>
 <a name="page-60"/>
-<PAGE-NUMBER align="left">60</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">60</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
   
 in the designing of machinery. It has for many years been a theory of
 the writer that in the production of large numbers of pieces, or
@@ -1589,8 +1697,10 @@ cutters
 
 <PAGE/>
 <a name="page-61"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">61</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">61</PAGE-NUMBER>
+</PAGE-HEADING>
 
 performing their work, then being withdrawn and returned to their
 former position, and then moved forward, and, the index having in the
@@ -1615,8 +1725,10 @@ cutting pinions having 7 to 12 leaves; indeed, several kinds may be
 
 <PAGE/>
 <a name="page-62"/>
-<PAGE-NUMBER align="left">62</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">62</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 cut at the same time. A brief description will serve to explain the
 operation of the machine, which as is shown in (Fig. 20) is circular
@@ -1644,8 +1756,10 @@ the magazines loaded with blanks, the shaft is started, and,
 
 <PAGE/>
 <a name="page-63"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">63</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">63</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-20">
   <img src="figures/page63_figure20.png"
@@ -1657,8 +1771,10 @@ the magazines loaded with blanks, the shaft is started, and,
 
 <PAGE/>
 <a name="page-64"/>
-<PAGE-NUMBER align="left">64</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">64</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 through the several belts running from the multigrooved pulley at the
 top of the machine to the several cutter-spindles, they are put in
@@ -1687,8 +1803,10 @@ cutter spindle is
 
 <PAGE/>
 <a name="page-65"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">65</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">65</PAGE-NUMBER>
+</PAGE-HEADING>
 
 moved sideways, so as to bring a second cutter into acting position,
 which proceeds with its work, and then gives place to a third and
@@ -1716,8 +1834,10 @@ three cutters accompanies the blank on its
 
 <PAGE/>
 <a name="page-66"/>
-<PAGE-NUMBER align="left">66</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">66</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 travel. This arrangement permits the cutting of different kinds of
 pinions to be performed simultaneously. In this machine the work of
@@ -1757,8 +1877,10 @@ inauguration of
 
 <PAGE/>
 <a name="page-68"/>
-<PAGE-NUMBER align="left">68</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">68</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 the foregoing machines, another form of machine has been also put in
 use, which embodies some of the features already noted, but which
@@ -1817,8 +1939,10 @@ such as is used in machine shops, or by model makers.
 
 <PAGE/>
 <a name="page-72"/>
-<PAGE-NUMBER align="left">72</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">72</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 It had the ordinary reciprocating bed, or table, which was moved back
 and forth by means of a hand crank, the connection probably being by
@@ -1840,8 +1964,10 @@ movable table was placed the head stock, whose index was operated by
 
 <PAGE/>
 <a name="page-73"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">73</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">73</PAGE-NUMBER>
+</PAGE-HEADING>
 
 hand. While this arrangement was somewhat crude, it served its
 purpose, and had its day. But in 1865 Mr. Ambrose Webster designed a
@@ -1869,8 +1995,10 @@ who knows the
 
 <PAGE/>
 <a name="page-74"/>
-<PAGE-NUMBER align="left">74</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">74</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 <figure id="figure-23">
   <img src="figures/page74_figure23.png"
@@ -1882,8 +2010,10 @@ who knows the
 
 <PAGE/>
 <a name="page-75"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">75</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">75</PAGE-NUMBER>
+</PAGE-HEADING>
 
 original form of this machine (Fig. 24,) or one who could accurately
 narrate the numerous changes, additions, and improvements which were
@@ -1907,8 +2037,10 @@ centers, and also carried the belt
   
 <PAGE/>
 <a name="page-76"/>
-<PAGE-NUMBER align="left">76</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">76</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 pulley. Reciprocal motion of the cutter was obtained by the vibration
 of a frame, which was mounted in suitible bearings on an adjustable
@@ -1934,8 +2066,10 @@ done,
 
 <PAGE/>
 <a name="page-77"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">77</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">77</PAGE-NUMBER>
+</PAGE-HEADING>
 
 for the combination of noises caused by the operation of the various
 slides, clicks and latches, mingling with the hum of the fly cutter,
@@ -1960,8 +2094,10 @@ namely, the absence of all springs in the
 
 <PAGE/>
 <a name="page-78"/>
-<PAGE-NUMBER align="left">78</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">78</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 mechanism for operating the index. These machines, of which several
 were used (and some of them are still in use), were very satisfactory
@@ -1988,8 +2124,10 @@ the
 
 <PAGE/>
 <a name="page-79"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">79</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">79</PAGE-NUMBER>
+</PAGE-HEADING>
 
 turning tools then retire and a suitable fly cutter comes into action,
 the blank is indexed step by step, and when all the teeth are formed,
@@ -2027,7 +2165,7 @@ severs the completed
       <figure id="figure-27c">
         <img src="figures/page79_figure27c.png"
              alt="Teeth."/>
-        <figcaption>Teeth'</figcaption>
+        <figcaption>Teeth.</figcaption>
       </figure>
     </td>
   </tr>
@@ -2048,8 +2186,10 @@ was found practicable to mount these
 
 <PAGE/>
 <a name="page-80"/>
-<PAGE-NUMBER align="left">80</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">80</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 different cutter spindles in a single rotatable block or head, so that
 the several cutters could be brought into operative position as
@@ -2070,8 +2210,10 @@ employed in that work(Fig. 28).
 
 <PAGE/>
 <a name="page-81"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">81</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">81</PAGE-NUMBER>
+</PAGE-HEADING>
 
 The late Ambrose Webster used to take considerable pride in saying
 that he made the first wheel tooth-cutting machine with automatic
@@ -2093,8 +2235,10 @@ carriage and operating the index, and also stopping itself on the
 
 <PAGE/>
 <a name="page-82"/>
-<PAGE-NUMBER align="left">82</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">82</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 completion of the work of each of the six cutters required. The
 operator had then to bring the succeeding cutter into operative
@@ -2116,8 +2260,10 @@ lifting of the cutter to avoid contact with the work during its return
 
 <PAGE/>
 <a name="page-83"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY</PAGE-HEADING>
-<PAGE-NUMBER align="right">83</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY</HEADING>
+  <PAGE-NUMBER align="right">83</PAGE-NUMBER>
+</PAGE-HEADING>
 
 movement. Mr. Woerd's machine is shown in the previous
 illustration. (Fig. 30.) To meet the requirements of the increasing
@@ -2138,8 +2284,10 @@ the movements of the machine, viz.. the reciprocating movements of the
 
 <PAGE/>
 <a name="page-84"/>
-<PAGE-NUMBER align="left">84</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">84</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 carriage, the lifting of the cutters during the return movement, the
 step by step motion of the index, the successive changes of cutters,
@@ -2174,8 +2322,10 @@ good economy to
 
 <PAGE/>
 <a name="page-86"/>
-<PAGE-NUMBER align="left">86</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">86</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 construct machines in such form as renders them capable of a variety
 of uses, thereby avoiding the expense of building a multiplicity of
@@ -2199,8 +2349,10 @@ than the ordinary
 
 <PAGE/>
 <a name="page-87"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">87</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">87</PAGE-NUMBER>
+</PAGE-HEADING>
 
 form of construction, and therefore complicating the matter of cutting
 the teeth. Experience, also, long ago demonstrated that it is not
@@ -2225,8 +2377,10 @@ carried by a running spindle or shaft. The disengaging
 
 <PAGE/>
 <a name="page-88"/>
-<PAGE-NUMBER align="left">88</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERV.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">88</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERV.</HEADING>
+</PAGE-HEADING>
 
 of the clutch and partial revolution of the spindle-carrying drum were
 performed by means of two hand levers (one of which is shown). A
@@ -2266,8 +2420,10 @@ required, to have the
 
 <PAGE/>
 <a name="page-90"/>
-<PAGE-NUMBER align="left">90</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">90</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 additional support of a tail stock, and one of these machines is shown
 as so provided. They, however, come short of being entirely automatic,
@@ -2292,8 +2448,10 @@ nature and appearance of the machine (Fig. 34), which, it will
 
 <PAGE/>
 <a name="page-91"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">91</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">91</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-34">
   <img src="figures/page91_figure34.png"
@@ -2305,8 +2463,10 @@ nature and appearance of the machine (Fig. 34), which, it will
 
 <PAGE/>
 <a name="page-92"/>
-<PAGE-NUMBER align="left">92</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">92</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 be seen, is in the favorite circular or continuous form, and may be
 briefly described as provided with four cutting spindles, each of
@@ -2332,8 +2492,10 @@ and out at the proper angle to the
 
 <PAGE/>
 <a name="page-93"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">93</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">93</PAGE-NUMBER>
+</PAGE-HEADING>
 
 face of the wheel, each movement removing a portion of metal, thereby
 blocking out the face teeth. In the meantime the operator places a
@@ -2359,8 +2521,10 @@ requires no individual
 
 <PAGE/>
 <a name="page-94"/>
-<PAGE-NUMBER align="left">94</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">94</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 operator, but allows him or her to attend to a large group of similar
 machines, which may be employed on
@@ -2407,8 +2571,10 @@ while the various
 
 <PAGE/>
 <a name="page-96"/>
-<PAGE-NUMBER align="left">96</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">96</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 numbers of threads per inch were somewhat systematic (varying from 110
 to 240 per inch) yet their equivalents in metric measurements seem not
@@ -2437,8 +2603,10 @@ hole in the plate until it came in
 
 <PAGE/>
 <a name="page-97"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">97</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">97</PAGE-NUMBER>
+</PAGE-HEADING>
 
 contact with the head, when the severing process was completed by
 twisting it off. This method of screw-making in the Waltham factory
@@ -2461,8 +2629,10 @@ of the two rows of holes in the slotting plate had been filled with
 
 <PAGE/>
 <a name="page-98"/>
-<PAGE-NUMBER align="left">98</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">98</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 screws in the manner above mentioned, it was fastened to the carriage
 of the slotting machine, which, on being started, would steadily carry
@@ -2488,8 +2658,10 @@ of balances, while made in a similar, but not identical manner as that
 
 <PAGE/>
 <a name="page-99"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">99</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">99</PAGE-NUMBER>
+</PAGE-HEADING>
 
 just described, were taken off in a sort of block instead of the above
 mentioned slotting plate. The reason for this method being the
@@ -2520,8 +2692,10 @@ machine shown in the nect view, (Fig. 38), which also
 
 <PAGE/>
 <a name="page-100"/>
-<PAGE-NUMBER align="left">100</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">100</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 shows the slotting block. On starting the machine the block was slowly
 revolved, carrying the heads of the radiating screws into contact with
@@ -2548,8 +2722,10 @@ shown in Fig.40. Examination of this picture will show that a
 
 <PAGE/>
 <a name="page-101"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">101</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">101</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-39">
   <img src="figures/page101_figure39.png"
@@ -2573,8 +2749,10 @@ shown in Fig.40. Examination of this picture will show that a
 
 <PAGE/>
 <a name="page-103"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">103</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">103</PAGE-NUMBER>
+</PAGE-HEADING>
 
 machine of this kind must of necessity be expensive to build; and this
 fact led to the designing of a machine more compact in form as well as
@@ -2606,8 +2784,10 @@ balance screws.
 
 <PAGE/>
 <a name="page-104"/>
-<PAGE-NUMBER align="left">104</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="left">104</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-41">
   <img src="figures/page104_figure41.png"
@@ -2619,8 +2799,10 @@ balance screws.
 
 <PAGE/>
 <a name="page-105"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">105</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">105</PAGE-NUMBER>
+</PAGE-HEADING>
 
 which, being of brass, are capable of more rapid production, so that
 twenty screws per minute are made on a single machine. (Fig. 42).
@@ -2662,9 +2844,10 @@ operations. Formerly, it was
 
 <PAGE/>
 <a name="page-107"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">107</PAGE-NUMBER>
-
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">107</PAGE-NUMBER>
+</PAGE-HEADING>
 
 needful to handle each individual screw as many times as there were
 distinct operations involved in the finishing process. But improved
@@ -2698,8 +2881,10 @@ turned
 
 <PAGE/>
 <a name="page-108"/>
-<PAGE-NUMBER align="left">108</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">108</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 the lathe spindle backward, unscrewing the finished screw from the
 chuck. To insure the proper position of the above mentioned oil stone
@@ -2728,8 +2913,10 @@ continuous running type of
 
 <PAGE/>
 <a name="page-109"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">109</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">109</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-45">
   <img src="figures/page109_figure45.png"
@@ -2741,8 +2928,10 @@ continuous running type of
 
 <PAGE/>
 <a name="page-110"/>
-<PAGE-NUMBER align="left">110</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">110</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 machines previously mentioned. This machine has a revolving head,
 containing eight spindles, each of which is provided with an interior
@@ -2770,8 +2959,10 @@ but it was entirely a matter of feeling.
 
 <PAGE/>
 <a name="page-111"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">111</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">111</PAGE-NUMBER>
+</PAGE-HEADING>
 
 A later form of machine has made this skill unnecessary, as each
 spindle, when it reaches the proper position, receives its screws
@@ -2792,8 +2983,10 @@ Wood. Other forms of
 
 <PAGE/>
 <a name="page-112"/>
-<PAGE-NUMBER align="left">112</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">112</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 machines have been made for finishing round-topped heads, but this
 chapter is quite long enough, and we will not attempt any description
@@ -2830,12 +3023,14 @@ the balance blank.
 
 <p>
 
-<PAGE-NUMBER center="right">113</PAGE-NUMBER>
+<PAGE-NUMBER align="center">113</PAGE-NUMBER>
 
 <PAGE/>
 <a name="page-114"/>
-<PAGE-NUMBER align="left">114</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">114</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 For the satisfactory action of the completed balance under varying
 temperatures, it is desired that the more expansive brass be made as
@@ -2864,8 +3059,10 @@ use (Fig. 47.)
 
 <PAGE/>
 <a name="page-115"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">115</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">115</PAGE-NUMBER>
+</PAGE-HEADING>
 
 This machine was provided with two grooved rolls mounted on and near
 one end of two parallel shafts, which near their other extremities
@@ -2887,8 +3084,10 @@ from a countershaft.
 
 <PAGE/>
 <a name="page-116"/>
-<PAGE-NUMBER align="left">116</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">116</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 A count wheel was so arranged as to receive a step by step movement by
 means of an arm and pawl attached to the axis of the trip hammer.
@@ -2925,8 +3124,10 @@ hammering of the rim, so that the
 
 <PAGE/>
 <a name="page-117"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">117</PAGE-NUMBER>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="right">117</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 <figure id="figure-49">
   <img src="figures/page117_figure49.png"
@@ -2938,8 +3139,10 @@ hammering of the rim, so that the
 
 <PAGE/>
 <a name="page-118"/>
-<PAGE-NUMBER align="left">118</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">118</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 metal on the entire periphery of the balance blank should be of
 uniform density.
@@ -2977,8 +3180,10 @@ required an operative
 
 <PAGE/>
 <a name="page-119"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">119</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">119</PAGE-NUMBER>
+</PAGE-HEADING>
 
 (Fig. 50.) The later practice is to employ an automatic lathe, which
 takes the blanks from a loaded tube andautomatically places them in
@@ -3000,8 +3205,10 @@ the cutting tools (Fig- 51.)
 
 <PAGE/>
 <a name="page-120"/>
-<PAGE-NUMBER align="left">120</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">120</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 <figure id="figure-51">
   <img src="figures/page120_figure51.png"
@@ -3015,8 +3222,10 @@ the cutting tools (Fig- 51.)
 
 <PAGE/>
 <a name="page-121"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">121</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">121</PAGE-NUMBER>
+</PAGE-HEADING>
 
 The blanks being turned and recessed, there follows the removal of two
 sections of the thin web of steel, leaving a transverse bar of metal,
@@ -3040,8 +3249,10 @@ which was sunk into one side.
 
 <PAGE/>
 <a name="page-122"/>
-<PAGE-NUMBER align="left">122</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">122</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 The next operation was performed in a lathe, the spindle of which was
 given a reciprocating motion, and in connection with it a special
@@ -3079,8 +3290,10 @@ balance was clamped, and in such position
 
 <PAGE/>
 <a name="page-123"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">123</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">123</PAGE-NUMBER>
+</PAGE-HEADING>
 
 as to bring the desired location for a hole in the axial line of the
 lathe spindle. By having the chuck carefully counterbalanced it could
@@ -3108,8 +3321,10 @@ holes was
 
 <PAGE/>
 <a name="page-124"/>
-<PAGE-NUMBER align="left">124</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">124</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 one of some delicacy and yet demanding rapidity in order to avoid
 undue expense; the speed was secured by mounting the tap in a small
@@ -3142,8 +3357,10 @@ automatic drilling machine, in the form shown in the next view
 
 <PAGE/>
 <a name="page-125"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">125</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">125</PAGE-NUMBER>
+</PAGE-HEADING>
 
 <figure id="figure-55">
   <img src="figures/page125_figure55.png"
@@ -3155,8 +3372,10 @@ automatic drilling machine, in the form shown in the next view
 
 <PAGE/>
 <a name="page-126"/>
-<PAGE-NUMBER align="left">126</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">126</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 save only in the supplying and removing of the balance, two persons
 are able to attend to twelve machines or more, which are arranged in
@@ -3181,8 +3400,10 @@ tapped simultaneously (fig.
 
 <PAGE/>
 <a name="page-127"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">127</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">127</PAGE-NUMBER>
+</PAGE-HEADING>
 
 56). The finish turning and glossing of the balance rim
 is an operation demanding special care and accuracy,
@@ -3206,8 +3427,10 @@ it in readiness for the turning operations. At one time
 
 <PAGE/>
 <a name="page-128"/>
-<PAGE-NUMBER align="left">128</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">128</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 the turning tools were in removable holders, which were taken in
 succession by the workman, and laid on a hardened tool-rest, in front
@@ -3230,8 +3453,10 @@ the holder
 
 <PAGE/>
 <a name="page-129"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">129</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">129</PAGE-NUMBER>
+</PAGE-HEADING>
 
 resting on a suitable guide; the movement of the slide being imparted
 through a suitable hand lever.
@@ -3329,8 +3554,10 @@ far
 
 <PAGE/>
 <a name="page-135"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">135</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">135</PAGE-NUMBER>
+</PAGE-HEADING>
 
 automatic in operation that one man only is required to keep them
 busy. The character of the work done by the several machines is
@@ -3359,8 +3586,10 @@ compared with the
 
 <PAGE/>
 <a name="page-136"/>
-<PAGE-NUMBER align="left">136</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">136</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 older pattern, which was a long wedge-like X piece of steel which was
 attached to the watch plate by a screw and two steady pins, and
@@ -3389,8 +3618,10 @@ form a sort of tongue, near
 
 <PAGE/>
 <a name="page-137"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">137</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">137</PAGE-NUMBER>
+</PAGE-HEADING>
 
 one corner of which is drilled a hole to receive the outer end of the
 hairspring. The opposite end of the stud is provided with a slit to
@@ -3419,8 +3650,10 @@ whole day; he therefore told the young apprentice that he might
 
 <PAGE/>
 <a name="page-138"/>
-<PAGE-NUMBER align="left">138</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">138</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 employ himself making hairspring pins. "Well, how many shall I make?"
 "O, make about a pint." Hairspring pins are not bulky articles, and
@@ -3441,8 +3674,10 @@ wire was held in a
 
 <PAGE/>
 <a name="page-139"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">139</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">139</PAGE-NUMBER>
+</PAGE-HEADING>
 
 spring chuck which was in a spindle removably connected with a spindle
 driven by a belt. With this was also employed a rotary file, as a
@@ -3482,8 +3717,10 @@ not be an
 
 <PAGE/>
 <a name="page-141"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">141</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">141</PAGE-NUMBER>
+</PAGE-HEADING>
 
 instantaneous matter, and often involved many changes;
 but in the case of the ordinary flat hair springs admitted
@@ -3518,8 +3755,10 @@ his work. As
 
 <PAGE/>
 <a name="page-142"/>
-<PAGE-NUMBER align="left">142</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">142</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 a result of his thought and study, he invented a system of testing all
 hair springs by a standard balance, and all balances by a standard
@@ -3548,8 +3787,10 @@ Figs. 65 and 66, which are of value to a
 
 <PAGE/>
 <a name="page-143"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">143</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">143</PAGE-NUMBER>
+</PAGE-HEADING>
 
 certain extent, but their use demands an amount of keen
 and accurate perception which not every workman
@@ -3575,8 +3816,10 @@ weighing the
 
 <PAGE/>
 <a name="page-144"/>
-<PAGE-NUMBER align="left">144</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">144</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 relative strength of springs. By the use of these two devices, an
 approximate selection of springs, as to their adaption to balances
@@ -3602,8 +3845,10 @@ and minute gauging of necessity demands
 
 <PAGE/>
 <a name="page-145"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">145</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">145</PAGE-NUMBER>
+</PAGE-HEADING>
 
 that the determining vibrations shall be continued through an interval
 sufficiently prolonged to disclose or reveal the peculiar condition of
@@ -3629,8 +3874,10 @@ balances, others for springs, and still others for testing. By
 
 <PAGE/>
 <a name="page-146"/>
-<PAGE-NUMBER align="left">146</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">146</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 means of this system the springs and balances are selected entirely
 independent of the movements to which they have been assigned, so that
@@ -3674,8 +3921,10 @@ complete. No mention whatever has been made of
 
 <PAGE/>
 <a name="page-149"/>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
-<PAGE-NUMBER align="right">149</PAGE-NUMBER>
+<PAGE-HEADING>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+  <PAGE-NUMBER align="right">149</PAGE-NUMBER>
+</PAGE-HEADING>
 
 some of the most recent changes. At no time in the history of this
 company have changes been so numerous nor so radical as within the
@@ -3707,8 +3956,10 @@ the field of invention, achieved so much in the embodiment
 
 <PAGE/>
 <a name="page-150"/>
-<PAGE-NUMBER align="left">150</PAGE-NUMBER>
-<PAGE-HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</PAGE-HEADING>
+<PAGE-HEADING>
+  <PAGE-NUMBER align="left">150</PAGE-NUMBER>
+  <HEADING>EVOLUTION OF AUTOMATIC MACHINERY.</HEADING>
+</PAGE-HEADING>
 
 of automatic features as render his recent machines wonders of
 mechanism. We refer to Mr. C. S. Moseley and Mr. D. H. Church.
