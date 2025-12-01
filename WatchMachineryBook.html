@@ -6,11 +6,6 @@
           margin-top: 2ex;
           margin-bottom: 2ex;
       }
-      PAGE {
-          display: block;
-          margin-bottom: 1ex;
-          border: solid thick yellow;
-      }
       CAPTION {
           display: block;
           margin-top: 1ex;
@@ -23,6 +18,13 @@
           margin-bottom: 2ex;
       }
 
+      /* Make page breaks visible: */
+      PAGE {
+          display: block;
+          border-top: 5px solid yellow;
+      }
+
+      /* PAge header and top page number formatting: */
       PAGE-HEADING {
           display: flex;
           justify-content: center;
@@ -31,7 +33,7 @@
           width: 100%;
           margin-bottom: 2ex;
       }
-      PAGE-HEADING>HEADING {
+      PAGE-HEADING > HEADING {
           text-align: center;
           flex-grow: 1;
           margin: 0;
@@ -49,26 +51,31 @@
       PAGE-NUMBER[align="center"] {
           display: block;
           text-align: center;
+      }
       PAGE-NUMBER {
           margin-top: 1ex;
           margin-bottom: 1ex;
       }
 
+      /* This markup is used for correcting perceived errors in the
+         original text. */
+      EDIT[type="remove"] {
+          display: inline;
+          text-decoration: line-through;
+      }
+
       img {
           width: 90%;
+          max-width: 100%;
+          height: auto;
       }
+
       figure > div.figure9 {
           display: grid;
           grid-template-columns: 45% 45%;
       }
       figure > div.figure9 > img {
           margin: 1ex;
-      }
-
-      /* Temporarily make page breaks visible: */
-      PAGE {
-          display: block;
-          border-top: 5px solid yellow;
       }
     </style>
   </head>
@@ -134,30 +141,19 @@ issues.
 <p>
 
 In my role relating to this work, it's hard to know what errors in the
-original work I should take the liberty of correcting.
-
-<p>
-  
-My intent was only to fix OCR errors.  Original editing mistakes, like
-the occurrance of "of of" on page 9, for example, were not corrected.
-
-<p>
-
-In the phrase "operating the cornering stool" on page 22, the "s" in
-"stool" is believed to be a typo as the caption on page 21 says
-"Cornering Tool".  A Google search "for lathe cornering stool" just
-produced results for turning the legs of stools.  Though a seaarch for
-"lathe cornering tool" didn't yield any exact matches, there were
-plenty of hits for a variety of tools for the lathe.  For the sake of
-some notion of "faithfulness" to the original text, this error was
-also not corrected.
+original work I should take the liberty of correcting.  I found four
+cases where I wanted to correct the original text for grammar,
+correctness and readability.  All such cases just involved removing
+extra letters or text.  These have been marked up with &lt;EDIT
+type="remove"&gt;bad text&lt;EDIT&gt;.  One can adjust the styling for
+that markup to suit ones taste.  I have chosen to overstrike it.
 
 <p>
 
 During the conversion, I maintained page breaks, page numbers and page
 headers and footers.  These were an indispensible naviggational aid in
 finding my way around the HTML file.  An attempt was made to find and
-preserve the paragraph breaks that occurr at page boundaries so that
+preserve the paragraph breaks that occur at page boundaries so that
 they would still be visible should a reader choose to turn off the CSS
 "display" properties of the "PAGE", "PAGE-NUMBER", and "PAGE-HEADING"
 elements.
@@ -351,16 +347,17 @@ better, for the reasons already stated. Still, the powers or
 capabilities of the machine are limited to a very narrow compass,
 i. e.. it can perform the particular duty for which it was made,
 whereas the man, the human machine, is capable of adaptation to the
-performance of of a great variety of duties. But within the field of
-its capacity the properly designed and well made machine will
-outstrip the man. Especially will this fact be apparent in the
-production of articles which from their nature demand the exercise of
-special skill and unremitting care and attention in their
-fabrication. Work of such nature calls for a great degree of nervous
-strain on the individual engaged in producing it. The expenditure of
-nervous energy entails fatigue, which in turn reduces the ability to
-exercise the needful skill or to concentrate the operator's attention,
-and a lessened quantity and inferior quality of product results.
+performance of <EDIT type="remove">of</EDIT> a great variety of
+duties. But within the field of its capacity the properly designed and
+well made machine will outstrip the man. Especially will this fact be
+apparent in the production of articles which from their nature demand
+the exercise of special skill and unremitting care and attention in
+their fabrication. Work of such nature calls for a great degree of
+nervous strain on the individual engaged in producing it. The
+expenditure of nervous energy entails fatigue, which in turn reduces
+the ability to exercise the needful skill or to concentrate the
+operator's attention, and a lessened quantity and inferior quality of
+product results.
 
 <p>
 
@@ -709,17 +706,18 @@ peculiar passage he bowed his head and struck the required key with his
 <i>nose</i>. In the case of this plate-turning lathe, the operator's
 two hands are engaged in manipulating the slide rest, and his two feet
 in stopping and starting the lathe, and opening the chuck. As a means
-of operating the cornering stool above mentioned, the knee of the
-operator is brought into service with perfect success.
+of operating the cornering <EDIT type="remove">s</EDIT>tool above
+mentioned, the knee of the operator is brought into service with
+perfect success.
 
 <p>
 
-It is obvious that a person could attend to but one of lathe of the
-kind described, and that the watch plate would require a large
-succession of turnings, each of which would require a special chuck,
-consequently a very large number of lathes would be demanded, beside
-the consumption of much time in changing chucks and adjusting the
-tools.
+It is obvious that a person could attend to but one
+of <EDIT type="remove">lathe of </EDIT>the kind described, and that
+the watch plate would require a large succession of turnings, each of
+which would require a special chuck, consequently a very large number
+of lathes would be demanded, beside the consumption of much time in
+changing chucks and adjusting the tools.
 
 <p>
 
@@ -2687,8 +2685,9 @@ The joint between the two plates was drilled with a row
 of radial holes, tapped to fit the balance screws, which
 were inserted, and made, in a manner similar to that
 already described.  When this block was filled it was
-it was placed on the arbor or spindle of the special slotting
-machine shown in the nect view, (Fig. 38), which also
+<EDIT type="remove">it was</EDIT> placed on the arbor or spindle of
+the special slotting machine shown in the nect view, (Fig. 38), which
+also
 
 <PAGE/>
 <a name="page-100"/>
